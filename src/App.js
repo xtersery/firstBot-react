@@ -15,8 +15,11 @@ function App() {
 
     return (
         <div className="App">
-            <div className="App-header">InnoBooking Bot</div>
-            <div className="close-button"><button onClick={onClose}>Close</button></div>
+            <div className="App-header">
+                tg.headerColor="#0055ff";
+                <div className="header-text">InnoBooking Bot</div>
+                <div className="close-button"><button onClick={onClose}>Close</button></div>
+            </div>
         </div>
     );
 }
