@@ -15,8 +15,8 @@ function App() {
 
     return (
         <div className="App">
-            work
-            <button onClick={onClose}>Close</button>
+            <div className="App-header">InnoBooking Bot</div>
+            <div className="close-button"><button onClick={onClose}>Close</button></div>
         </div>
     );
 }
