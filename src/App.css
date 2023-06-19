@@ -22,8 +22,9 @@ body {
 
   .header-text {
     font: optional;
+    float: left;
   }
 
   .close-button {
-    margin-right: 5%;
+    float: right;
   }
