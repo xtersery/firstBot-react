@@ -1,11 +1,12 @@
 import './App.css';
 import { useEffect } from 'react';
-import { Layout, Breadcrumb, Row, Col, Typography, Button } from 'antd';
-import { CloseOutlined } from '@ant-design/icons';
-import { titleStyle, headerStyle } from './components/styles';
+import { Layout, Breadcrumb, Row, Col, TimePicker } from 'antd';
+import { headerStyle } from './components/styles';
+import dayjs from 'dayjs';
 
 const { Header, Footer, Content } = Layout;
 
+const format = "HH:mm";
 
 const tg = window.Telegram.WebApp;
 
@@ -28,13 +29,15 @@ function App() {
           ...headerStyle
         }}
       >
-        <Row justify="center" align="middle">
-          <Col xl={6} xs={12}>
-            <Typography.Title level={3} style={titleStyle}>InnoBooking Bot</Typography.Title>
+        <Row justify="center">
+          <Col xs={{ span: 11, offset: 1 }}>
+            <TimePicker defaultValue={dayjs('19:00', format)} format={format}/>
           </Col>
-          <Col xl={2} xs={{ span: 2, offset: 10}}>
-            <Button type="primary" shape="square"  icon={<CloseOutlined />}/>
+
+          <Col xs={{ span: 11, offset: 1 }}>
+            <TimePicker defaultValue={dayjs('19:00', format)} format={format}/>
           </Col>
+
         </Row>
         {/* <div className="demo-logo" />
         <Menu
