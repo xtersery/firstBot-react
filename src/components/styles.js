@@ -29,7 +29,7 @@ export const titleStyle = {
   fontFamily: 'Roboto',
   fontStyle: 'normal',
   fontWeight: '500',
-  fontSize: '1.6em',
+  fontSize: '1em',
   letterSpacing: '0.03em',
   color: '#282828'
 }

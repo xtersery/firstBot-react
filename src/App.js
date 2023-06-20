@@ -32,7 +32,7 @@ function App() {
           <Col xl={6} xs={12}>
             <Typography.Title level={3} style={titleStyle}>InnoBooking Bot</Typography.Title>
           </Col>
-          <Col xl={2} xs={12}>
+          <Col xl={2} xs={{ span: 2, offset: 6}}>
             <Button type="primary" shape="square"  icon={<CloseOutlined />}/>
           </Col>
         </Row>
