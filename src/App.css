@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,11 +20,8 @@ body {
     color: white;
   }
 
-  .header-text {
-    font: optional;
+  .header-text, .close-button {
+    width: 49%;
     float: left;
   }
-
-  .close-button {
-    float: right;
-  }
+*/
