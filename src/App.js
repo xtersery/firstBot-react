@@ -29,10 +29,10 @@ function App() {
         }}
       >
         <Row justify="center" align="middle">
-          <Col span={6}>
+          <Col xl={6} xs={12}>
             <Typography.Title level={3} style={titleStyle}>InnoBooking Bot</Typography.Title>
           </Col>
-          <Col span={2}>
+          <Col xl={2} xs={12}>
             <Button type="primary" shape="square"  icon={<CloseOutlined />}/>
           </Col>
         </Row>

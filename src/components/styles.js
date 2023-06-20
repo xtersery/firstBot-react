@@ -1,5 +1,5 @@
 export const headerStyle = {
-    paddingInline: 50,
+    paddingInline: '20%',
     lineHeight: '64px',
     backgroundColor: '#F5F5F5'
 };
@@ -32,4 +32,4 @@ export const titleStyle = {
   fontSize: '1.6em',
   letterSpacing: '0.03em',
   color: '#282828'
-  }
+}
