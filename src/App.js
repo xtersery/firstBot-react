@@ -1,8 +1,8 @@
 import './App.css';
 import { useEffect } from 'react';
-import { Layout, Space, Menu, Breadcrumb, theme } from 'antd';
+import { Layout, Menu, Breadcrumb } from 'antd';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 const tg = window.Telegram.WebApp;
 
@@ -12,9 +12,9 @@ function App() {
         tg.ready();
     }, [])
 
-    const onClose = () => {
-        tg.close();
-    }
+    // const onClose = () => {
+    //     tg.close();
+    // }
 
     return (
         <Layout className="layout">
