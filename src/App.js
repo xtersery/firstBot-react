@@ -1,8 +1,11 @@
 import './App.css';
 import { useEffect } from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Breadcrumb, Row, Col, Typography, Button } from 'antd';
+import { CloseOutlined } from '@ant-design/icons';
+import { titleStyle, headerStyle } from './components/styles';
 
 const { Header, Footer, Content } = Layout;
+
 
 const tg = window.Telegram.WebApp;
 
@@ -20,11 +23,20 @@ function App() {
         <Layout className="layout">
       <Header
         style={{
-          display: 'flex',
+          display: 'display-box',
           alignItems: 'center',
+          ...headerStyle
         }}
       >
-        <div className="demo-logo" />
+        <Row justify="center" align="middle">
+          <Col span={6}>
+            <Typography.Title level={3} style={titleStyle}>InnoBooking Bot</Typography.Title>
+          </Col>
+          <Col span={2}>
+            <Button type="primary" shape="square"  icon={<CloseOutlined />}/>
+          </Col>
+        </Row>
+        {/* <div className="demo-logo" />
         <Menu
           theme="dark"
           mode="horizontal"
@@ -36,30 +48,23 @@ function App() {
               label: `nav ${key}`,
             };
           })}
-        />
+        /> */}
       </Header>
-      <Content
-        style={{
-          padding: '0 50px',
-        }}
-      >
-        <Breadcrumb
-          style={{
-            margin: '16px 0',
-          }}
-        >
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
-        <div
-          className="site-layout-content"
-        //   style={{
-        //     background: colorBgContainer,
-        //   }}
-        >
-          Content
-        </div>
+      <Content>
+        <Row justify="center" align="center">
+          <Col span={3}>
+                <Breadcrumb
+                  style={{
+                    margin: '16px 0',
+                  }}
+                >
+            <Breadcrumb.Item>Home</Breadcrumb.Item>
+            <Breadcrumb.Item>List</Breadcrumb.Item>
+            <Breadcrumb.Item>App</Breadcrumb.Item>
+          </Breadcrumb>
+          </Col>
+
+        </Row>
       </Content>
       <Footer
         style={{

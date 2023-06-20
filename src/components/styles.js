@@ -1,10 +1,7 @@
 export const headerStyle = {
-    textAlign: 'center',
-    color: '#fff',
-    height: 64,
     paddingInline: 50,
     lineHeight: '64px',
-    backgroundColor: '#7dbcea'
+    backgroundColor: '#F5F5F5'
 };
 
 export const contentStyle = {
@@ -27,3 +24,12 @@ export const footerStyle = {
     color: '#fff',
     backgroundColor: '#7dbcea',
   };
+
+export const titleStyle = {
+  fontFamily: 'Roboto',
+  fontStyle: 'normal',
+  fontWeight: '500',
+  fontSize: '1.6em',
+  letterSpacing: '0.03em',
+  color: '#282828'
+  }
